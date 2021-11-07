@@ -1,0 +1,70 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-info {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.head-menu {
+    background-color: #F0A83E;
+    ;
+}
+
+.menu-item {
+    color: white;
+}
+
+nav ul {
+
+    list-style: none;
+}
+
+#banner {
+    background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.jpg);
+    height: 409px;
+}
+
+.banner-main-title {
+    background-color: white;
+}
+
+.banner-main-subtittle {
+    color: #3C2313;
+}
+
+.banner-main-button {
+    background-color: #F0A83E;
+    color: white;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.products-mainmessage {
+    color: #3C2313
+}
+
+.products ul {
+    list-style: none;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400px;
+}
+
+.product-name {
+    color: #3C2313;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.product-price{
+    color: #F0A83E;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+}
