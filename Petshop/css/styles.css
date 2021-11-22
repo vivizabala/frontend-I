@@ -1,29 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+    margin: auto;
 }
 
 .top-info {
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     color: blanchedalmond;
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.head-menu img {
+    max-height: 20px;
 }
 
 .head-menu {
+    display: flex;
     background-color: #F0A83E;
-    ;
+    justify-content: space-between;
+    height: 62px;
+    align-items: center;
 }
 
 .menu-item {
     color: white;
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 20px;
 }
 
 nav ul {
@@ -32,28 +50,41 @@ nav ul {
 }
 
 #banner {
+    display: flex;
+    justify-content: flex-end;
     background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.jpg);
     height: 409px;
+}
+
+#banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-main-title {
     background-color: white;
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 12px;
 }
 
 .banner-main-subtittle {
     color: #3C2313;
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
 
 }
 
@@ -62,22 +93,44 @@ text-align: center;
     color: white;
     padding: 15px;
     font-family: 'Roboto', sans-serif;
-    
-width: 141px;
-height: 49px;
-left: 767px;
-top: 334px;
+    width: 141px;
+    height: 49px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.products div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .products-mainmessage {
     color: #3C2313
 }
 
-.products ul {
+.products div ul {
+    display: flex;
     list-style: none;
     color: #666666;
     font-size: 15px;
     font-weight: 400px;
+}
+.products div ul li{
+    margin: 31px;
+}
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products-list article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-name {
@@ -97,13 +150,131 @@ top: 334px;
     line-height: 18px;
 }
 
-.footer-mid {
-    background-color: #3C2313;
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    margin-top: 85px;
 }
+
+.contacts h1 {
+    color: #3C2313;
+}
+
+.contacts-space {
+    background-color: #3C2313;
+    color: #FFFFFF;
+    height: 40px;
+    width: 340px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 15px;
+
+}
+
+.btn-reset {
+    background-color: #8A8787;
+    color: #FFFFFF;
+    width: 110px;
+    height: 34px;
+    border-radius: 15px;
+    border: 0;
+}
+
+.btn-send {
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    width: 110px;
+    height: 34px;
+    border-radius: 15px;
+    border: 0;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 20px;
+}
+
+.subcribe-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subscribe-form span {
+    display: inline-block;
+
+    width: 271px;
+    background-color: #FFFFFF;
+    color: #A0A0A0;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.subscribe-form button {
+    background-color: #3C2313;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 12px;
+    border: 0;
+
+}
+
+.footer-mid {
+    display: flex;
+    background-color: #3C2313;
+    justify-content: space-between;
+    padding: 41px;
+}
+
 
 .icon-container {
     background-color: #8A8787;
     color: white;
+    width: 58px;
+    height: 57px;
+    border-radius: 30px;
+
+    /* Opción 1: lo tratamos como texto */
+    /* text-align: center;
+    line-height: 58px;*/
+
+    /* Opción 2: el circulo gris se es contenedor flex
+    y centramos el contenido (recomendado) por ser más fácil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon-container i {
+    /* las font asowme son fuentes,
+    entonces su tamaño depende de la fuente */
+    font-size: 28px;
+}
+
+
+.footer-mid-info-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-title {
@@ -124,13 +295,24 @@ top: 334px;
     line-height: 12px;
 }
 
-.footer-end{
-background-color: #222222;
+.footer-end {
+    background-color: #222222;
     color: white;
     font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 10px;
-line-height: 12px;
-text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    .footer-mid {
+        flex-direction: column-reverse;
+    }
+
+    .subscribe-container {
+        flex-direction: column;
+    }
+
 }

@@ -22,8 +22,10 @@
     <section class="top-info">
 
         <i> Grandes ofertas en comederos </i>
-        <i>Español </i>
-        <i> Argentina</i>
+        <div class="top-info-lang">
+            <i>Español </i>
+            <i> ARG$</i>
+        </div>
         <!-- <hr> Es para crear una línea -->
 
     </section>
@@ -33,12 +35,12 @@
         <img src="./img/Logo.png" alt="">
 
         <nav>
-            <ul>
-                <li class="menu-item"> <i class="fas fa-paw"></i> Categorías </li>
-                <li class="menu-item"> <i class="fas fa-paw"></i>Pets</li>
-                <li class="menu-item"><i class="fas fa-paw"></i>Nosotros</li>
-                <li class="menu-item"><i class="fas fa-paw"></i>Contactanos</li>
-            </ul>
+
+            <a class="menu-item"> <i class="fas fa-paw"></i> Categorías </a>
+            <a class="menu-item"> <i class="fas fa-paw"></i>Pets</a>
+            <a class="menu-item"><i class="fas fa-paw"></i>Nosotros</a>
+            <a class="menu-item"><i class="fas fa-paw"></i>Contactanos</a>
+
         </nav>
 
     </section>
@@ -46,64 +48,104 @@
     <main>
         <!-- Sección del banner -->
         <section id="banner">
-            <!-- <img src="./img/bowl-and-pet-daities-on-green-background 1.jpg" alt="imagen logo"> -->
-            <h2 class="banner-main-title">¡Es un placer tenerte aquí!</h2>
-            <h4 class="banner-main-subtittle">¡Comederos en descuento!</h4>
-            <button class="banner-main-button">COMEDEROS</button>
+            <div>
+                <h2 class="banner-main-title">¡Es un placer tenerte aquí!</h2>
+                <h4 class="banner-main-subtittle">¡Comederos en descuento!</h4>
+                <button class="banner-main-button">COMEDEROS</button>
+            </div>
         </section>
         <!-- Sección productos -->
         <section class="products">
-            <img src="./img/pawprint 1.png" alt="imagen patita">
-            <h2 class="products-mainmessage">Productos Destacados</h2>
-            <ul>
-                <li>Comederos</li>
-                <li>Accesorios</li>
-                <li>Comida</li>
-            </ul>
-
-            <article>
-                <img src="./img/churrasquito.png" alt="imagen producto 1">
-                <h6 class="product-name">Juguete Churrasquito</h6>
-                <p class="product-price">$150</p>
-            </article>
-            <article>
-                <img src="./img/comedero.png" alt="imagen producto 2">
-                <h6 class="product-name">Comedero para perro</h6>
-                <p class="product-price">$250</p>
-            </article>
-            <article>
-                <img src="./img/Huesito.png" alt="imagen producto 3">
-                <h6 class="product-name">Juguete Huesito</h6>
-                <p class="product-price">$650</p>
-            </article>
-
+            <div>
+                <img src="./img/pawprint 1.png" alt="imagen patita">
+                <h2 class="products-mainmessage">Productos Destacados</h2>
+                <ul>
+                    <li>Comederos</li>
+                    <li>Accesorios</li>
+                    <li>Comida</li>
+                </ul>
+            </div>
+            <section class="products-list">
+                <article>
+                    <img src="./img/churrasquito.png" alt="imagen producto 1">
+                    <h6 class="product-name">Juguete Churrasquito</h6>
+                    <p class="product-price">$150</p>
+                </article>
+                <article>
+                    <img src="./img/comedero.png" alt="imagen producto 2">
+                    <h6 class="product-name">Comedero para perro</h6>
+                    <p class="product-price">$250</p>
+                </article>
+                <article>
+                    <img src="./img/Huesito.png" alt="imagen producto 3">
+                    <h6 class="product-name">Juguete Huesito</h6>
+                    <p class="product-price">$650</p>
+                </article>
+            </section>
         </section>
     </main>
+    <section class="contacts">
 
+        <h2>Contáctanos</h2>
+        <div class="contacts-space">Nombre y Apellido</div>
+        <div class="contacts-space">Ingresa tu correo electrónico</div>
+        <div class="contacts-space">Teléfono</div>
+
+        <div>
+            <button class="btn-reset">Resetear</button>
+            <button class="btn-send">Enviar</button>
+        </div>
+
+
+
+    </section>
+    <section class="subscribe-container">
+        <div class="subscribe-notification">
+            <i class="far fa-envelope"></i>
+
+            <span>Suscríbete para más novedades</span>
+
+        </div>
+
+        <div class="subscribe-form">
+            <span> Ingresá tu correo electronico</span>
+            <button>Suscribirme</button>
+
+        </div>
+
+
+    </section>
     <footer>
 
         <section class="footer-mid">
+            <div class=footer-info>
+                <article class="footer-mid-info-container">
+                    <span class="icon-container"> <i class="fas fa-map-marker"></i> </span>
+                    <div class="info-container">
+                        <h5 class="info-title">localidad</h5>
+                        <h6 class="info-detail">Calle-Provincia</h6>
+                    </div>
+                </article>
 
-            <article class="footer-mid-info-container">
-                <span class="icon-container"> <i class="fas fa-map-marker"></i> </span>
-                <h5 class="info-title">localidad</h5>
-                <h6 class="info-detail">Calle-Provincia</h6>
-            </article>
+                <article class="footer-mid-info-container">
+                    <span class="icon-container"> <i class="fas fa-phone"></i></span>
+                    <div class="info-container">
+                        <h5 class="info-title">Teléfono</h5>
+                        <h6 class="info-detail">Número de teléfono</h6>
+                    </div>
+                </article>
 
-            <article class="footer-mid-info-container">
-                <span class="icon-container"> <i class="fas fa-phone"></i></span>
-                <h5 class="info-title" >Teléfono</h5>
-                <h6 class="info-detail">Número de teléfono</h6>
-            </article>
-
-            <article class="footer-mid-info-container">
-                <span class="icon-container"> <i class="fas fa-envelope"></i></span>
-                <h5 class="info-title">Correo electrónico</h5>
-                <h6 class="info-detail">Dirección de correo</h6>
-            </article>
-
-            <img src="./img/Logo.png" alt="">
-
+                <article class="footer-mid-info-container">
+                    <span class="icon-container"> <i class="fas fa-envelope"></i></span>
+                    <div class="info-container">
+                        <h5 class="info-title">Correo electrónico</h5>
+                        <h6 class="info-detail">Dirección de correo</h6>
+                    </div>
+                </article>
+            </div>
+            <div class="footer-logo">
+                <img src="./img/Logofooter.png" alt="">
+            </div>
         </section>
 
         <section class="footer-end">
